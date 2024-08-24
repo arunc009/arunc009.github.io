@@ -35,11 +35,11 @@ navbar-links:
 avatar: "/assets/img/arun.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: false
+round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/arun.png"
+#title-img: "/assets/img/arun.png"
 
 
 #####################################
@@ -50,17 +50,17 @@ title-img: "/assets/img/arun.png"
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: arunc009
+  email: "arunchaudhary.bit@gmail.com"
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #facebook: arunc009
   github: arunc009
   twitter: arunc009
-  patreon: arunc009
-  youtube: "@arunc009"
-  whatsapp: +9999999999
+#  patreon: arunc009
+#  youtube: "@arunc009"
+#  whatsapp: +9999999999
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: arunc009
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
