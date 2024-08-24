@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: My Personal website
 
 # Your name to show in the footer
-author: Some Person
+author: Arun Chaudhary
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -52,12 +52,12 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  facebook: arunc009
+  github: arunc009
+  twitter: arunc009
+  patreon: arunc009
+  youtube: "@arunc009"
+  whatsapp: +9999999999
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
