@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Here you go
 ---
 
 My name is Arun Chaudhary. I have the following qualities:
