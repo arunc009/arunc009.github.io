@@ -1,118 +1,31 @@
-###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
-###########################################################
-
-############################
-# --- Required options --- #
-############################
-
-# Name of website
 title: Arun Chaudhary
 
-# Your name to show in the footer
 author: Arun Chaudhary
 
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Blog: "/"
+  Hire me: "https://arunc.com"
+  About Me / Contact: "aboutme"
   Author's home: "https://arunc009.github.io"
 
-################
-# --- Logo --- #
-################
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
 avatar: "/assets/img/arun.png"
 
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
-#title-img: "/assets/img/arun.png"
-
-
-#####################################
-# --- Footer social media links --- #
-#####################################
-
-# Select the social network links that you want to show in the footer.
-# You can change the order that they show up on the page by changing the order here.
-# Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "arunchaudhary.bit@gmail.com"
-  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  #facebook: arunc009
   github: arunc009
   twitter: arunc009
-#  patreon: arunc009
-#  youtube: "@arunc009"
-#  whatsapp: +9999999999
-#  medium: yourname
-#  reddit: yourname
+  youtube: "@arunc009"
   linkedin: arunc009
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
 
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
-
-###########################
-# --- General options --- #
-###########################
-
-# Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: false
   linkedin: true
-  vk: false
 
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "arunc.com"
-
-# Add the website title to the title of every page
-title-on-all-pages: true
-
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
+feed_show_excerpt: false
+feed_show_tags: false
 
-# Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
-
-# Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+keywords: "infrastructure,automation,devops,linux,cloud,ansible,containers,kubernetes,security"
 
 # Add a search button to the navbar
 post_search: true
@@ -154,7 +67,7 @@ footer-hover-col: "#0085A1"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -275,13 +188,38 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
   -
     scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: "notblog"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "pages"
     values:
       layout: "page"
+      comments: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      before-content: [support_promo_box.html, carbonads.html]
+      footer-extra: footer-subscribe.html
 
 # Exclude these files from production site
 exclude:
@@ -298,6 +236,5 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
